@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>뮤직뱅크 - AI 작사가</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>뮤직뱅크</h1>
+      <p>주제를 입력하면 AI가 노래 가사와 스타일을 추천해줘요!</p>
+    </header>
+    <section class="api-key-section">
+      <label for="api-key">재미니 API 키 입력:</label>
+      <input type="password" id="api-key" placeholder="API 키를 입력하세요" autocomplete="off">
+      <button id="save-api-key">저장</button>
+      <span id="api-key-status"></span>
+    </section>
+    <section class="input-section">
+      <label for="topic">가사 주제/내용 입력:</label>
+      <textarea id="topic" rows="3" placeholder="예: 여름 바다, 첫사랑, 우정 등"></textarea>
+      <button id="generate-lyrics">가사 생성</button>
+    </section>
+    <section class="output-section">
+      <h2>AI가 추천한 가사 & 스타일</h2>
+      <div id="output-lyrics" class="output-box"></div>
+      <div id="output-style" class="output-box"></div>
+      <button id="copy-output">가사 & 스타일 복사</button>
+    </section>
+    <footer>
+      <small>Powered by Gemini & SUNO AI | © 2024 뮤직뱅크</small>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

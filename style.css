@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(135deg, #f8e8ee 0%, #e0f7fa 100%);
+  font-family: 'Pretendard', 'Noto Sans KR', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.container {
+  max-width: 480px;
+  margin: 40px auto;
+  background: #fff8fa;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+header h1 {
+  font-size: 2.2rem;
+  color: #a084e8;
+  margin-bottom: 0.2em;
+  letter-spacing: 2px;
+}
+header p {
+  color: #7b8fa1;
+  font-size: 1.05rem;
+  margin: 0;
+}
+.api-key-section, .input-section, .output-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  font-weight: 600;
+  color: #7b8fa1;
+}
+input[type="password"], textarea {
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  background: #f6faff;
+  transition: border 0.2s;
+}
+input[type="password"]:focus, textarea:focus {
+  border: 1.5px solid #a084e8;
+  outline: none;
+}
+button {
+  background: linear-gradient(90deg, #a084e8 0%, #f4978e 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(160,132,232,0.08);
+}
+button:hover {
+  background: linear-gradient(90deg, #f4978e 0%, #a084e8 100%);
+}
+#api-key-status {
+  font-size: 0.95rem;
+  color: #a084e8;
+  margin-left: 8px;
+}
+textarea {
+  resize: vertical;
+  min-height: 60px;
+  max-height: 180px;
+}
+.output-section {
+  gap: 14px;
+}
+.output-box {
+  background: #f6faff;
+  border-radius: 12px;
+  border: 1.2px solid #e0e0e0;
+  padding: 16px;
+  font-size: 1.08rem;
+  color: #444;
+  min-height: 60px;
+  white-space: pre-line;
+  margin-bottom: 6px;
+}
+footer {
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  margin-top: 18px;
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    padding: 18px 4vw 12px 4vw;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .output-box {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
